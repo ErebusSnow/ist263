@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> Week 4 Notes- Table & Forms</title>
+</head>
+
+<body>
+    <h1>Tables</h1>
+    <!-- The use to use <table border="2" before as starting tag-->
+    <table border="2">
+        <!-- CAPTION is for the title of the table-->
+        <caption> Population</caption>
+        <!--TR is for the row-->
+        <tr> 
+            <!--TH is for the Header of the each table column-->
+            <th>Country</th>
+            <th>Population</th>
+            <th>Percentage</th>
+        </tr>
+        <tr>
+            <!-- TD is for regulat table data-->
+            <td>China </td>
+            <td>15000 </td>
+            <td>25%</td>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>12000</td>
+            <td></td>
+        </tr>
+    </table>
+        
+<h1> Forms</h1>
+<!-- Below is the code to create a form such as the one to sign in to a page -->
+    <form action ="" method="">
+        <!--This is to ptu a text before the box, (This code needs to before the the box so it can appear before the box ont he page)-->
+        <label for="fname"> First name: </label> <br> <!-- BR lets you to have thiks code and the following one above the other one, not on the same line-->
+        <!--This code is for a small text Box, for example your name-->
+        <input type ="text" id="fname" name="fname"><br>
+        <br> <!-- Specially used to give same between the lines written-->
+        <!-- The following for a text area, pss The row and columns doesn't matter much
+         --> 
+         <label for="comments"> Comments: </label><br>
+         <textarea id="comments" name="comments" row="4" cols="50"> Lorem ipsum</textarea> <br>
+         <br>
+         <!-- The following is to make a radio, in other words multiple chhoices where you can only choose one option-->
+         <p> Please select your age: </p>
+         <input type="radio" id="ages1" name="age" value="30">
+         <label for="ages1"> 0-30</label><br>
+         <input type="radio" id="age2" name="age" value="60">
+         <label for="age2"> 31-60</label><br>
+         <input type="radio" id="age3" name="age" value="100">
+         <lable for="age3"> 61-100</lable><br>
+         <br>
+         <!-- This is to create a Checkbox-->
+         <p>What Type of Vehicle do you have?</p>
+         <input type="checkbox" id="vehicle1" name="vehicle1" value="Car">
+         <lable for="vehicle1"> I have a car</lable>
+         <input type="checkbox" id="vehicle2" name="vehicle2" value="Bike">
+         <lable for="vehicle2"> I have a bike</lable>
+         <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+         <lable for="vehicle3"> I have a boat</lable><br>
+         <br>
+         
+         <!-- to create a dropdown box-->
+          <label label="cars"> Choose your car: </label><br>
+          <select name="cars" id="cars">
+            <option value="volvo"> Volvo</option>
+            <option value="saab"> Saab</option>
+            <option value="opel"> Opel</option>
+            <option value="audi"> Audi</option>
+          </select>
+         <br> <br>
+         <!--this is to create a butoom-->
+         <input type="submit" value= "Send Form"> 
+    </form>
+</body>
+
+</html>
