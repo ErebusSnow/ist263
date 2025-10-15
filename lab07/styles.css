@@ -10,5 +10,10 @@ a:visited {color:#a113e2}
 h1, h2 {color:#964040}
 
 nav {background-color: #3e4a60;}
-nav a {color:#b52727;}
+nav a {
+    color:#b52727;
+    padding: 10px;
+    margin-bottom: 30px;
+    
+}
 nav a:hover {background-color: #207168;}
