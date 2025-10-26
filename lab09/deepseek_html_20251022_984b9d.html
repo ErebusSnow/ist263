@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Complete HTML & CSS Example</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        #container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            border: 2px dashed #ccc;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        
+        p {
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        p a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        p a:hover {
+            text-decoration: underline;
+            color: #004499;
+        }
+        
+        a:hover {
+            font-weight: bold;
+        }
+        
+        a:visited {
+            color: #663399;
+        }
+        
+        p, td {
+            font-size: 14px;
+        }
+        
+        .flex-container {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .flex-item {
+            flex: 1;
+            padding: 20px;
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+        }
+        
+        .float-left {
+            float: left;
+            width: 200px;
+            margin-right: 20px;
+            background-color: #d1ecf1;
+            padding: 10px;
+        }
+        
+        .clear-both {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Main Heading (H1)</h1>
+            <h2>Subheading (H2)</h2>
+            
+            <!-- Navigation -->
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <hr>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Text Elements Section -->
+            <section>
+                <h2>Text Elements</h2>
+                
+                <p>This is a regular paragraph with <strong>strong importance</strong> text inside it.</p>
+                
+                <!-- This is a comment - it won't show on the page -->
+                
+                <div class="container">
+                    <h3>Lists</h3>
+                    <p>Unordered List:</p>
+                    <ul>
+                        <li>First item</li>
+                        <li>Second item</li>
+                        <li>Third item</li>
+                    </ul>
+                    
+                    <p>Ordered List:</p>
+                    <ol>
+                        <li>First item</li>
+                        <li>Second item</li>
+                        <li>Third item</li>
+                    </ol>
+                </div>
+                
+                <p>Here's a <a href="https://www.example.com" target="_blank">link to Example.com</a> and here's a <a href="#visited">visited style link</a>.</p>
+                
+                <img src="https://via.placeholder.com/400x200" alt="Placeholder image description">
+            </section>
+
+            <hr>
+
+            <!-- Media & Tables Section -->
+            <section>
+                <h2>Media & Tables</h2>
+                
+                <div class="float-left">
+                    <h4>Floated Element</h4>
+                    <p>This element is floated left using CSS float property.</p>
+                </div>
+                
+                <p>This text wraps around the floated element. The float property allows other content to flow around it.</p>
+                
+                <div class="clear-both"></div>
+                
+                <h4>Table Example</h4>
+                <table border="1" style="width: 100%; border-collapse: collapse;">
+                    <caption>Employee Information</caption>
+                    <tr>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Salary</th>
+                    </tr>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Marketing</td>
+                        <td>$50,000</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>Engineering</td>
+                        <td>$75,000</td>
+                    </tr>
+                </table>
+                
+                <h4>Iframe Example</h4>
+                <iframe src="https://www.example.com" width="100%" height="300" title="Example Website Frame"></iframe>
+            </section>
+
+            <hr>
+
+            <!-- Form Elements Section -->
+            <section>
+                <h2>Form Elements</h2>
+                
+                <form action="/submit" method="post" style="background-color: #f8f9fa; padding: 20px; border-radius: 5px;">
+                    <div style="margin-bottom: 15px;">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" style="width: 200px; padding: 5px;">
+                    </div>
+                    
+                    <div style="margin-bottom: 15px;">
+                        <label for="comments">Comments:</label><br>
+                        <textarea id="comments" name="comments" rows="4" cols="50" style="width: 100%; padding: 5px;">Enter your comments here...</textarea>
+                    </div>
+                    
+                    <div style="margin-bottom: 15px;">
+                        <label>Gender:</label><br>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                        
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                    
+                    <div style="margin-bottom: 15px;">
+                        <label>Interests:</label><br>
+                        <input type="checkbox" id="sports" name="interests" value="sports">
+                        <label for="sports">Sports</label><br>
+                        
+                        <input type="checkbox" id="music" name="interests" value="music">
+                        <label for="music">Music</label><br>
+                        
+                        <input type="checkbox" id="reading" name="interests" value="reading">
+                        <label for="reading">Reading</label>
+                    </div>
+                    
+                    <div style="margin-bottom: 15px;">
+                        <label for="country">Country:</label>
+                        <select id="country" name="country" style="padding: 5px;">
+                            <option value="us">United States</option>
+                            <option value="ca">Canada</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="au">Australia</option>
+                        </select>
+                    </div>
+                    
+                    <input type="submit" value="Submit Form" style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
+                </form>
+            </section>
+
+            <hr>
+
+            <!-- Layout & Flexbox Section -->
+            <section>
+                <h2>Layout & Flexbox</h2>
+                
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <h3>Flex Item 1</h3>
+                        <p>This flex item uses flex: 1 to take equal space.</p>
+                    </div>
+                    <div class="flex-item">
+                        <h3>Flex Item 2</h3>
+                        <p>This flex item also uses flex: 1.</p>
+                    </div>
+                    <div class="flex-item">
+                        <h3>Flex Item 3</h3>
+                        <p>All three items share the space equally.</p>
+                    </div>
+                </div>
+                
+                <article style="background-color: #e7f3ff; padding: 15px; margin: 10px 0; border-left: 4px solid #007bff;">
+                    <h3>Article Element</h3>
+                    <p>This is an independent, self-contained content piece using the &lt;article&gt; tag.</p>
+                </article>
+                
+                <aside style="background-color: #fff3cd; padding: 15px; margin: 10px 0; border: 1px solid #ffeaa7;">
+                    <h3>Aside Element</h3>
+                    <p>This is content aside from the main content, like a sidebar.</p>
+                </aside>
+            </section>
+        </main>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer style="text-align: center; padding: 20px; background-color: #343a40; color: white;">
+            <p>&copy; 2024 My Website. All rights reserved.</p>
+            <p>Contact: <a href="mailto:info@example.com" style="color: #80bdff;">info@example.com</a></p>
+        </footer>
+    </div>
+
+    <!-- Inline CSS Example -->
+    <div style="
+        font-family: 'Courier New', monospace;
+        font-size: 16px;
+        font-weight: bold;
+        color: #dc3545;
+        background-color: #f8d7da;
+        text-decoration: underline;
+        border: 2px solid #dc3545;
+        margin: 20px auto;
+        padding: 15px;
+        width: 80%;
+        text-align: center;
+    ">
+        This div uses extensive inline CSS styling with multiple properties!
+    </div>
+
+    <!-- Background Image Example -->
+    <div style="
+        background-image: url('https://via.placeholder.com/800x200');
+        background-size: cover;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        margin: 20px 0;
+    ">
+        Background Image Example
+    </div>
+</body>
+</html>
