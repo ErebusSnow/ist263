@@ -73,8 +73,10 @@ nav a:hover {background-color: #374151;}
     .skillstable {
         flex:1;
         margin: 0 auto;
+        flex-basis: 50%;
     }
     .skillsimage {
         flex:1;
         text-align: center;
+        flex-basis:50%;
     }
