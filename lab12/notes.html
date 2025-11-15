@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> Jacascript Pt 2 Week 2</title>
+
+    <script>
+        function bigly () {
+            document.getElementById("p1").innerHTML="New Content"
+        }
+        function wrongAnswer() {
+            document.getElementById("wwrong").innerHTML= "<span style='color:red;'> True is the wrong answer!</span>"
+        }
+        function changeImage () {
+            document.getElementById("teamsimage").setAttribute("src", "../project/images/Bach.jpg");
+        }
+        function bluey () {
+            document/getElementById("p2").style.color="#0000FF";
+        }
+    </script>
+
+</head>
+
+<body>
+    <p id="p1" onclick="bigly()"> Content goes here </p>
+    <p id="p2"> Paragraph 2</p>
+
+    <h1> My JavaScript Quiz</h1>
+
+    <p onmouseover="bluey();"> Java and JavaScript are the same thing.</p>
+    <p onlick="wrongAnswer();" id="wrong">True</p>
+    <p onlick="rightAnswer();" id="right"> False</p>
+
+<img src="../project/images/Arnold Schoenberg.jpg" id="teamsimage" onclick="changeImage();">
+
+</body>
+
+</html>
