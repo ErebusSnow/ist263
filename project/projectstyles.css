@@ -1,0 +1,95 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    color: #2C1810;
+    background-color: #ecf0f1;
+}
+
+header {
+    background-color:rgb(228, 237, 247);
+    padding: 1em;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+.header-container {
+    margin: 0 auto;
+    padding: px;
+    align-items: center;
+    padding: 15px;
+    display:flex;
+}
+.header-logo { 
+    object-fit: cover;
+}
+.header-navigation {
+    margin-left:auto;
+    text-align:center;
+}
+nav a {
+    color:#666;
+    
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+nav a:visited {
+    color:#7c3aed;
+}
+
+main {
+    margin: 0 auto;
+    padding: 20px
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+h1 {
+    text-decoration: underline;
+}
+
+.composer-container {
+    display:flex;
+    align-items:center;
+    padding: 30px;
+}
+
+.composerinfo1 {
+    flex:1;
+    order: 1
+}
+
+.composerinfo2 {
+    order: 2;
+}
+
+.composerimage1 {
+    order: 2;
+    margin-left: 30px;
+}
+
+.composerimage2 {
+    flex: 1;
+    order: 1;
+    margin-right: 30px;
+}
+.clear {clear:none;}
+
+
+@media (max-width: 800px) {
+        nav a {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        nav span {display: none;}
+        .composer-container {
+            display:block;
+        }
+        .clear{clear:both;}
+    }
