@@ -11,6 +11,10 @@ header {
     border-radius: 15px;
 }
 
+.music-center {
+    text-align: center;
+}
+
 .header-container {
     margin: 0 auto;
     padding: px;
