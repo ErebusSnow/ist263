@@ -84,6 +84,21 @@ nav a:hover {background-color: #374151;}
 
     .main-index-img {max-width: 100%;}
 
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
     @media (max-width: 800px) {
         nav a {
             display: block;
