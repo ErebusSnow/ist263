@@ -1,0 +1,96 @@
+body {
+    background-color:#f8f9fa;
+    color:#2d3748;
+}
+
+a {color:#2563eb}
+a:hover {color:#1d4ed8}
+a:visited {color:#7c3aed}
+
+h1, h2 {
+    color:#1e293b;
+    text-align: center;
+    width: 100%;
+}
+
+table, th, td {border:1px solid black;}
+
+nav {background-color: #1e293b;}
+nav a {
+    color:#f8fafc;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+nav a:hover {background-color: #374151;}
+.quote {float: right;}
+.clear {clear:both;}
+
+.contact-container {
+        display: flex;
+        padding: 15px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        border: 1px solid black;
+        border-radius: 15px;
+        background-color: aliceblue;
+        }
+    .address-container {
+        flex:1; 
+        order: 1;
+    }
+    .links-container {
+        flex:1;
+        order: 2;
+        margin-left: 25px;
+    }
+
+    .form-map-container {
+        display: flex;
+        padding:20px;
+        margin-bottom: 20px;
+        border: 1px solid black;
+        border-radius: 15px;
+        background-color: aliceblue;
+        flex-wrap: wrap;
+    }
+    .form-container {
+        flex: 1;
+        order: 1;
+    }
+    .map-container {
+        flex: 1;
+        order: 2;
+        margin-left: 10px;
+    }
+
+    .firstrow {
+        display: flex;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 15px;
+        background-color: aliceblue;
+    }
+
+    .skillstable {
+        flex:1;
+        margin: 0 auto;
+        flex-basis: 50%;
+    }
+    .skillsimage {
+        flex:1;
+        text-align: center;
+        flex-basis:50%;
+    }
+
+    .main-index-img {max-width: 100%;}
+
+    @media (max-width: 800px) {
+        nav a {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        nav span {display: none;}
+    }
