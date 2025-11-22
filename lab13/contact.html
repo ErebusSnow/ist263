@@ -1,69 +1,84 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Contact</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-     <nav>
-        <a href="index.html">Bio Page <span>|</span></a>
-        <a href="skills.html"> Skills Page <span>|</span></a>
-        <a href="contact.html"> Contact Page</a>
-    </nav>
 
-<div class="contact-container">
+<a href="#maincontent" class="skip-link">Skip to Content</a>
+
+<header>
+    <nav>
+        <a href="index.html">Bio Page <span>|</span></a>
+        <a href="skills.html">Skills Page <span>|</span></a>
+        <a href="contact.html">Contact Page</a>
+    </nav>
+</header>
+
+<main id="maincontent">
+
+<h1>Contact Me</h1>
+
+<section class="contact-container">
     <div class="address-container">
         <p><strong>Name:</strong> Kelvin Zorrilla Burgos</p>
-    <p><strong>Address:</strong> 900 S Crouse Ave, Syracuse, NY</p>
+        <p><strong>Address:</strong> 900 S Crouse Ave, Syracuse, NY</p>
     </div>
+
     <div class="links-container">
-        <p><a href="mailto:kzorrill@syr.edu"> Kelvin Zorrilla Burgos' Email</a></p>
+        <p><a href="mailto:kzorrill@syr.edu">Email Kelvin Zorrilla Burgos</a></p>
 
-        <img src="logo-sized.png" alt="linkendin logo"> 
+        <img src="logo-sized.png" alt="LinkedIn icon">
 
-        <p><a href="https://www.linkedin.com/in/kelvin-zorrilla/"> My LinkendIn Profile </a></p>
+        <p><a href="https://www.linkedin.com/in/kelvin-zorrilla/">Visit my LinkedIn profile</a></p>
     </div>
-<div class="clear"></div>
-</div>
-<div class="form-map-container">
+</section>
+
+<section class="form-map-container">
     <div class="form-container">
-    <form action="https://formspree.io/f/mnnbeveb" method="post">
-        <label for="fname">First Name: </label> <br>
-        <input type="text" id="fname" name="fname"> <br><br>
 
-        <label for="lname">Last Name: </label> <br>
-        <input type="text" id="lname" name="lname"><br> 
+        <form action="https://formspree.io/f/mnnbeveb" method="post">
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname"><br><br>
 
-        <p>Where did you find me?</p>
-            <input type="radio" id="media1" name="media" value="linkendin">
-            <label for="media1"> LinkendIn</label><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+
+            <p>Where did you find me?</p>
+            <input type="radio" id="media1" name="media" value="linkedin">
+            <label for="media1">LinkedIn</label><br>
+
             <input type="radio" id="media2" name="media" value="indeed">
-            <label for="media2"> Indeed</label><br>
+            <label for="media2">Indeed</label><br>
+
             <input type="radio" id="media3" name="media" value="handshake">
-            <label for="media3"> Handshake</label> <br>
-            <input type="radio" id="media4"
-            name="media" value="other">
-            <label for="media4"> Other</label>
-            <br><br>
+            <label for="media3">Handshake</label><br>
 
-        <label for="comments"> Why do you want to contact me? </label><br>
-        <textarea id="comments" name="comments" rows="5" cols="40"> </textarea><br><br>
+            <input type="radio" id="media4" name="media" value="other">
+            <label for="media4">Other</label><br><br>
 
-    <input type="submit" value= "Send Form">
-    </form>
+            <label for="comments">Why do you want to contact me?</label><br>
+            <textarea id="comments" name="comments" rows="5" cols="40"></textarea><br><br>
+
+            <input type="submit" value="Send Form">
+        </form>
+
     </div>
+
     <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7331.169419507642!2d-76.12877104366605!3d43.03919267801676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fba2ccc55%3A0x5e6089065251084d!2sSyracuse%20University!5e0!3m2!1sen!2sus!4v1757547065745!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <br><br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7331.169419507642!2d-76.12877104366605!3d43.03919267801676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fba2ccc55%3A0x5e6089065251084d!2sSyracuse%20University!5e0!3m2!1sen!2sus!4v1757547065745!5m2!1sen!2sus" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
     </div>
-</div>
+</section>
 
+</main>
 
 </body>
-
 </html>
