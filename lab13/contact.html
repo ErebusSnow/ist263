@@ -50,24 +50,25 @@
 
             <label for="lname">Last Name:</label><br>
             <input type="text" id="lname" name="lname"><br><br>
+            <fieldset>
+                <legend>Where did you find me?</legend>
+                <input type="radio" id="media1" name="media" value="linkedin">
+                <label for="media1">LinkedIn</label><br>
 
-            <p>Where did you find me?</p>
-            <input type="radio" id="media1" name="media" value="linkedin">
-            <label for="media1">LinkedIn</label><br>
+                <input type="radio" id="media2" name="media" value="indeed">
+                <label for="media2">Indeed</label><br>
 
-            <input type="radio" id="media2" name="media" value="indeed">
-            <label for="media2">Indeed</label><br>
+                <input type="radio" id="media3" name="media" value="handshake">
+                <label for="media3">Handshake</label><br>
 
-            <input type="radio" id="media3" name="media" value="handshake">
-            <label for="media3">Handshake</label><br>
+                <input type="radio" id="media4" name="media" value="other">
+                <label for="media4">Other</label><br><br>
 
-            <input type="radio" id="media4" name="media" value="other">
-            <label for="media4">Other</label><br><br>
+                <label for="comments">Why do you want to contact me?</label><br>
+                <textarea id="comments" name="comments" rows="5" cols="40"></textarea><br><br>
 
-            <label for="comments">Why do you want to contact me?</label><br>
-            <textarea id="comments" name="comments" rows="5" cols="40"></textarea><br><br>
-
-            <input type="submit" value="Send Form">
+                <input type="submit" value="Send Form">
+            </fieldset>
         </form>
 
     </div>
