@@ -82,6 +82,13 @@ h1 {
 }
 .clear {clear:none;}
 
+h1, h2 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
 
 @media (max-width: 800px) {
         nav a {
