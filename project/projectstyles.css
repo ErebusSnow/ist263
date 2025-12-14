@@ -2,6 +2,7 @@ body {
     font-family:'Times New Roman', Times, serif;
     color: #2C1810;
     background-color: #ecf0f1;
+    
 }
 
 header {
@@ -14,6 +15,15 @@ header {
 .music-center {
     text-align: center;
 }
+
+.main-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    width: 100%;
+}
+
 
 .header-container {
     margin: 0 auto;
@@ -82,11 +92,53 @@ h1 {
 }
 .clear {clear:none;}
 
-h1, h2 {
+h1, h2, h3, h4 {
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+}
+
+.artist {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+}
+
+.artist-image {
+    flex: 0; 
+    height: 400px;
+    order: 1;
+
+}
+
+.artist-info {
+    width: 100%; 
+    margin-bottom: 1rem; 
+}
+
+.artist-achievement {
+    background: #fff8e1;
+    padding: 0.8rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    font-style: italic;
+    color: #7d6608;
+    border-left: 3px solid #ffd700;
+    flex:both;
+}
+
+.featured-works {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    border-left: 4px solid #ffd700;
+    flex: both;
 }
 
 
@@ -102,5 +154,19 @@ h1, h2 {
         .composer-container {
             display:block;
         }
+        
         .clear{clear:both;}
+
+        .artist {
+            display:block;
+        }
+        .artist-achievement {
+            margin-bottom: 20px;
+        }
+        .main-image {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
     }
+
