@@ -155,6 +155,20 @@ h1, h2, h3, h4 {
     flex: both;
 }
 
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
 
 @media (max-width: 800px) {
         nav a {
